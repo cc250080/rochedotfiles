@@ -21,3 +21,16 @@ git remote add origin git@git.sr.ht:~sircmpwn/dotfiles
 git fetch
 git checkout -f master
 ```
+
+##Setup of Starship
+
+```
+apt-get install fonts-firacode
+curl -sS https://starship.rs/install.sh | sh
+```
+Add the following to the end of .bashrc (already in the repo)
+
+```
+eval "$(starship init bash)"
+```
+
