@@ -132,7 +132,7 @@ alias vim=nvim
 export PATH="$HOME/.local/bin:$PATH"
 export GOROOT=/usr/local/go
 export GOPATH=~/.go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.local/bin
 
 # Starship
 eval "$(starship init bash)"
