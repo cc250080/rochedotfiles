@@ -126,6 +126,7 @@ alias awsDevWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:a
 alias awsSandCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheSandbox && export AWS_PROFILE=RocheSandbox'
 alias awsSandWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
 alias k=kubectl
+alias vim=nvim
 
 #EXPORTS
 export PATH="$HOME/.local/bin:$PATH"
