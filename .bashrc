@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+#ALIASES
+
 alias awsCustomerDevCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::370516466271:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheCustomerDev && export AWS_PROFILE=RocheCustomerDev'
 alias awsCustomerDevWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::370516466271:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
 alias awsDevCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::999061576626:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheDev && export AWS_PROFILE=RocheDev'
@@ -123,7 +126,12 @@ alias awsDevWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:a
 alias awsSandCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheSandbox && export AWS_PROFILE=RocheSandbox'
 alias awsSandWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
 alias k=kubectl
+
+#EXPORTS
 export PATH="$HOME/.local/bin:$PATH"
 export GOROOT=/usr/local/go
 export GOPATH=~/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Starship
+eval "$(starship init bash)"
