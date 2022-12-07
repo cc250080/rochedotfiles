@@ -33,3 +33,6 @@ set autoindent smartindent
 
 " Colorscheme 
 colorscheme elflord
+
+" Use comments in Italic Font by default
+highlight Comment cterm=italic gui=italic

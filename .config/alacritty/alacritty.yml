@@ -925,3 +925,10 @@ colors:
     cyan:    '#88B3B2'
     white:   '#C1A78E'
 
+window:
+  opacity: 0.94
+
+
+
+
+
