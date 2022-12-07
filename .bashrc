@@ -142,3 +142,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/.local/bin
 
 # Starship
 eval "$(starship init bash)"
+
+# SSH Agent
+eval "$(ssh-agent)"
