@@ -132,6 +132,7 @@ alias vim=nvim
 alias k=kubectl
 source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
+export KUBE_EDITOR=nvim
 
 #EXPORTS
 export PATH="$HOME/.local/bin:$PATH"
