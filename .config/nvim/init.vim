@@ -32,7 +32,7 @@ let g:indentLine_char = '⦙'
 set autoindent smartindent
 
 " Colorscheme 
-colorscheme elflord
+colorscheme default
 
 " Use comments in Italic Font by default
 highlight Comment cterm=italic gui=italic
