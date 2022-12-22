@@ -125,6 +125,8 @@ alias awsDevCli='navify-aws-sso-login --username cortescc --login-role-arn arn:a
 alias awsDevWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::999061576626:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
 alias awsSandCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheSandbox && export AWS_PROFILE=RocheSandbox'
 alias awsSandWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::539394064815:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
+alias awsQaCli='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::134732107763:role/Roche/Products/EPC/EPCDevOps --write-credentials RocheQa && export AWS_PROFILE=RocheQa'
+alias awsQaWeb='navify-aws-sso-login --username cortescc --login-role-arn arn:aws:iam::134732107763:role/Roche/Products/EPC/EPCDevOps --get-admin-console-url'
 alias vim=nvim
 
 #KUBERNETES AUTOMCOMPLETION
@@ -149,3 +151,7 @@ eval "$(ssh-agent)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
